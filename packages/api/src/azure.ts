@@ -38,6 +38,11 @@ async function fetch(request: HttpRequest, env: NodeJS.ProcessEnv) {
   }, { status: 404 })
 }
 
-app.get('bangumi', async (request: HttpRequest) => {
-  return await fetch(request, process.env)
+app.http('Bilibili Bangumi Component Backend', {
+  methods: ['GET'],
+  route: 'bangumi/{name}',
+  authLevel: 'anonymous',
+  handler: async (request: HttpRequest) => {
+    return await fetch(request, process.env)
+  },
 })
