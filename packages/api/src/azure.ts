@@ -38,7 +38,7 @@ async function fetch(request: HttpRequest, env: NodeJS.ProcessEnv) {
   }, { status: 404 })
 }
 
-app.http('Bilibili Bangumi Component Backend', {
+app.http('bangumi-component-backend', {
   methods: ['GET'],
   route: 'bangumi/{name}',
   authLevel: 'anonymous',
