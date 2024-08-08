@@ -13,6 +13,7 @@
     "build": "tsup",
     "build:mock": "tsup --env.MOCK"
   },
-  "devDependencies": {
+  "dependencies": {
+    "@azure/functions": "^4.5.0"
   }
 }

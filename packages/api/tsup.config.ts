@@ -9,7 +9,7 @@ const customMock = readFileSync(path.resolve(__dirname, './src/mock/custom.js'),
 
 export default defineConfig((options) => {
   return {
-    entry: ['src/vercel.ts', 'src/val-town.ts', 'src/cloudflare.ts'],
+    entry: ['src/vercel.ts', 'src/val-town.ts', 'src/cloudflare.ts', 'src/azure.ts'],
     outDir: path.resolve(__dirname, '../../api'),
     splitting: false,
     minify: !options.watch,
